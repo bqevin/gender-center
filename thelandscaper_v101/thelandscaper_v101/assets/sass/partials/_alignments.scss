@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+3.3 Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1.2em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+.alignnone {
+	margin: 2px 30px 20px 0;
+}
+.single-image {
+	margin-bottom: 0;
+}

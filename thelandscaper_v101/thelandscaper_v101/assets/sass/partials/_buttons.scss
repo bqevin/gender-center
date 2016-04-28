@@ -1,0 +1,167 @@
+/*--------------------------------------------------------------
+3.5 Buttons
+--------------------------------------------------------------*/
+
+a {
+	color: $primary-color;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: darken( $primary-color, 3);
+		text-decoration: none;
+		outline: none;
+		transition: $primary-transition;
+	}
+
+	span.read.more,
+	&.more {
+		position: relative;
+		display: inline-block;
+		margin-top: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		&::before {
+			position: absolute;
+			content: "\f105";
+			font-family: "FontAwesome";
+			right: -13px;
+			top: 1px;
+			font-size: 13px;
+			transition: $primary-transition;
+		}
+
+		&:hover::before {
+			right: -11px;
+		}
+	}
+
+	img {
+		border: none;
+	}
+}
+
+.esg-grid a {
+
+	&:focus {
+		color: $white-color;
+	}
+}
+
+.btn {
+	padding: 18px 22px;
+	font-size: 13px;
+	font-family: $primary-font;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	border-width: 2px;
+	border-radius: 1px;
+	transition: $primary-transition;
+
+	&:focus,
+	&:active:focus {
+		outline: none;
+	}
+
+	&.rounded {
+		border-radius: 30px;
+	}
+
+	&.fullwidth {
+		width: 100%;
+	}
+
+	.fa {
+		padding-right: 15px;
+		font-size: 18px;
+		vertical-align: middle;
+	}
+}
+
+// Button Primary
+.btn-primary {
+	color: $white-color;
+	border-color: transparent;
+	background-color: $primary-color;
+	
+	&:active,
+	&:focus,
+	&:active:focus,
+	&:hover {
+		border-color: transparent;
+		background-color: darken($primary-color, 3);
+	}
+}
+
+// Button Outline
+.btn-outline {
+	text-shadow: none;
+	border: 2px solid rgba(50,50,50,0.2);
+	color: rgba(50,50,50,0.6);
+	background-color: transparent;
+
+	&:active,
+	&:focus,
+	&:active:focus,
+	&:hover {
+		color: $white-color;
+		border-color: rgba(250,250,250,0.44);
+	}
+}
+
+// Call to Action Widget Button Outline
+.cta-banner .btn-outline,
+.carousel.slide .btn-outline {
+	color: $white-color;
+	border-color: rgba(250,250,250,0.33);
+
+	&:hover {
+		color: $white-color;
+		border-color: rgba(250,250,250,0.5);
+	}
+}
+
+
+// Password protection button
+.post-password-form {
+
+	> p {
+
+		label {
+
+			input {
+				height: 50px;
+				padding: 0px 20px;
+				font-size: 13px;
+				font-weight: normal;
+				width: 100%;
+				outline: none;
+				border: 1px solid #dedede;
+				border-radius: 1px;
+				vertical-align: middle;
+			}
+		}
+
+		> input {
+			position: relative;
+			top: 1px;
+			height: 50px;
+			padding: 0 20px;
+			font-size: 13px;
+			border-radius: 0 1px 1px 0;
+			border: 1px solid $primary-color;
+			background: $primary-color;
+			transition: $primary-transition;
+		}
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------
+12.0 Pagination
+--------------------------------------------------------------*/
+
+.pagination {
+	position: relative;
+	display: block;
+	margin: 0 0 60px 0;
+	padding-top: 60px;
+	text-align: center;
+	border-style: dashed;
+	border-width: 1px 0 0 0;
+	border-color: #dedede;
+
+	a,
+	span {
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		margin: 0 2px 0 0;
+		line-height: 58px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 1px;
+		border: 2px solid transparent;
+
+		&.current {
+			color: $white-color;
+			background-color: $primary-color;
+		}
+	}
+
+	a {
+		font-weight: bold;
+		color: #999999;
+		border-color: $light-gray-color;
+
+		&:hover {
+			color: $white-color;
+			border-color: $primary-color;
+			background-color: $primary-color;
+		}
+
+		&.next {
+			position: absolute;
+			right: 0;
+			margin: 0;
+		}
+
+		&.prev {
+			position: absolute;
+			left: 0;
+			margin: 0;
+		}
+	}
+}
+
+
+/* Gallery (Project) Pagination */
+.project-navigation {
+	padding: 30px 0;
+	border-style: dashed;
+	border-width: 1px 0 0 0;
+	border-color: #e6e6e6;
+	text-align: center;
+	
+	a {
+		position: relative;
+		display: block;
+		padding: 15px 20px;
+		min-width: 150px;
+		margin: 0;
+		color: $white-color;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+		border-radius: 1px;
+		border: 2px solid transparent;
+		background-color: $primary-color;
+		transition: $primary-transition;
+
+		@media(min-width: $screen-xs) {
+			display: inline-block;
+			margin: 0;
+		}
+
+		&:hover,
+		&:focus {
+			color: $white-color;
+			background-color: darken( $primary-color, 3);
+		}
+
+		.fa {
+			font-size: 16px;
+		}
+
+		&.summary {
+			min-width: auto;
+			margin: 0 10px;
+			background-color: transparent;
+			border: 2px solid #f2f2f2;
+			color: #999999;
+
+			&:focus,
+			&:hover {
+				background-color: transparent;
+				border-color: #e6e6e6;
+				color: #777777;
+			}
+		}
+
+		&:first-of-type {
+
+			.fa {
+				margin-right: 2px;
+			}
+		}
+
+		&:last-of-type {
+
+			.fa {
+				margin-left: 2px;
+			}
+		}
+	}
+}

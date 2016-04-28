@@ -1,0 +1,19 @@
+<wpml-config>
+	<admin-texts>
+		<key name="the_landscaper_theme_mod">
+			<key name="qt_gallery_main_title" />
+			<key name="qt_gallery_sub_title" />
+			<key name="qt_gallery_slug" />
+			<key name="qt_gallery_prev_text" />
+			<key name="qt_gallery_next_text" />
+			<key name="qt_blog_share_tooltip" />
+			<key name="qt_blog_sharebtn_twitter" />
+			<key name="qt_blog_sharebtn_facebook" />
+			<key name="qt_blog_sharebtn_googleplus" />
+			<key name="qt_blog_share_linkedin" />
+			<key name="qt_footerbottom_textleft" />
+			<key name="qt_footerbottom_textmiddle" />
+			<key name="qt_footerbottom_textright" />
+		</key>
+	</admin-texts>
+</wpml-config>

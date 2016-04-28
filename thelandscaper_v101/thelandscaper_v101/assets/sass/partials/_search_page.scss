@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+18.0 Search Page
+--------------------------------------------------------------*/
+
+.search-list-results {
+	counter-reset: counter-search;
+	padding-left: 0;
+	
+	li {
+		padding: 30px 0;
+		display: block;
+		border-bottom: 1px solid #e6e6e6;
+		position: relative;
+		counter-increment: counter-search;
+
+		&::before {
+			content: counter(counter-search);
+			position: absolute;
+			top: calc(50% - 24px);
+			left: 0px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		a {
+			color: #333333;
+			text-decoration: none;
+		}
+
+		.post-title {
+			padding-left: 45px;
+			margin-bottom: 0;
+			font-size: 22px;
+		}
+	}
+}

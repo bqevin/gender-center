@@ -1,0 +1,192 @@
+/*--------------------------------------------------------------
+3.1 Normalize
+--------------------------------------------------------------*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+hr {
+	position: relative;
+	border-top: 1px solid #e6e6e6;
+	height: 1px;
+	width: 100%;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 20px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: 0;
+}
+
+th {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.post-content {
+
+	table {
+
+		td,
+		th {
+			padding: 7px 10px;
+			border: 1px solid #dddddd;
+		}
+	}
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+blockquote,
+q {
+	position: relative;
+	quotes: "" "";
+}
+
+
+b, strong {
+	font-weight: bold;
+}
+
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	padding: 0 40px;
+	margin: 30px 0;
+	font-size: inherit;
+	font-style: italic;
+	border-left: none;
+
+	> p {
+		font-size: 16px;
+		line-height: 1.8;
+	}
+
+	&::after {
+		position: absolute;
+		font-family: 'Playfair Display', serif;
+		content: '"';
+		top: -30px;
+		left: 5px;
+		font-size: 10em;
+		line-height: 1;
+		color: rgba(153, 153, 153, 0.19);
+	}
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 13px;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+	border: 1px solid #dadada;
+	word-break: break-all;
+	word-wrap: break-word;
+	border-radius: 2px;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #545454;
+	cursor: help;
+}
+
+mark,
+ins {
+	font-weight: 900;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: 0.5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}

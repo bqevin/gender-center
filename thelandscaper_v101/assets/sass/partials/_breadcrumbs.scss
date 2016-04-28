@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+9.0 Breadcrumbs
+--------------------------------------------------------------*/
+
+.breadcrumbs {
+	position: relative;
+	margin: 0 0 50px 0;
+	z-index: 1;
+	font-size: 12px;
+	border-bottom: 1px solid #f0f0f0;
+
+	@media(min-width: $screen-xs) {
+		font-size: 14px;
+	}
+	
+	span {
+		display: inline-block;
+	}
+
+	a {
+		position: relative;
+		display: inline-block;
+		padding: 15px 20px 15px 0;
+		color: #cccccc;
+
+		@media(min-width: $screen-xs) {
+
+			padding: 15px 40px 15px 0;
+
+			&::after {
+				position: absolute;
+				content: "";
+				top: 24px;
+				right: 18px;
+				font-family: "FontAwesome";
+				font-weight: normal;
+				font-size: 12px;
+				width: 4px;
+				height: 4px;
+				background-color: #cecece;
+				border-radius: 50%;
+			}
+		}
+
+		&:hover {
+			color: $darker-text-color;
+		}
+	}
+
+	span {
+
+		>span {
+			font-weight: bold;
+			color: $primary-color;
+		}
+
+		@media(min-width: $screen-xs) {
+
+			&:last-of-type::after {
+				display: none;
+			}
+		}
+	}
+}

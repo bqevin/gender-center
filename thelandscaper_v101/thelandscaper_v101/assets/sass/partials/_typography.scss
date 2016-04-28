@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+3.2 Typography
+--------------------------------------------------------------*/
+
+p {
+	margin-bottom: 11px;
+	text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $secondary-font;
+	font-weight: bold;
+	margin-top: 0;
+	color: $dark-color;
+	line-height: 1.3;
+}
+
+.post-content {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 20px;
+	}
+}

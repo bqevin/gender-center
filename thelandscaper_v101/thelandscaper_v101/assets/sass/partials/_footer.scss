@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+17.0 Footer
+--------------------------------------------------------------*/
+
+.footer {
+
+	.widget-title {
+		font-size: 20px;
+		color: $white-color;
+	}
+
+	.widget_nav_menu {
+
+		ul li {
+			position: relative;
+
+			&::before {
+				position: relative;
+				padding-right: 20px;
+				content: "\f178";
+				font-family: "FontAwesome";
+				color: rgba(255,255,255,0.15);
+				font-size: 12px;
+			}
+
+			a {
+
+				&:hover {
+					color: $white-color;
+				}
+			}
+		}
+	}
+}
+
+/* Main Footer */
+
+.main-footer {
+	position: relative;
+	padding: 80px 0 50px 0;
+	color: #676767;
+	background-color: #333333;
+
+	.widget {
+		margin-bottom: 30px;
+	}
+
+	.widget_nav_menu ul {
+		padding-left: 0;
+
+		>li>a {
+			color: #757575;
+		}
+	}
+}
+
+/* Bottom Footer */
+.bottom-footer {
+	position: relative;
+	padding: 23px 0;
+	overflow: hidden;
+	text-align: center;
+	background-color: #292929;
+	
+	p {
+		margin-bottom: 0;
+		color: #777777;
+
+		@media(max-width: $screen-md) {
+			margin: 3px 0;
+		}
+	}
+	
+	a {
+		color: #e4e4e4;
+
+		&:hover {
+			color: $white-color;
+		}
+	}
+	
+	.fa {
+		margin: 0 3px;
+		font-size: 24px;
+		vertical-align: middle;
+	}
+	
+	.bottom-right {
+		text-align: right;
+	}
+
+	.bottom-left {
+		@media(min-width: $screen-md) {
+			text-align: left;
+		}
+	}
+
+	@media(max-width: $screen-md) {
+		.bottom-footer,
+		.bottom-right {
+			text-align: center;
+		}
+	}
+}
+
+.scrollToTop {
+	display: none;
+
+	@media(min-width: $screen-md) {
+		opacity: 0;
+		visibility: hidden;
+		position: fixed;
+		display: block;
+		bottom: 20px;
+		right: 20px;
+		width: 50px;
+		height: 50px;
+		line-height: 48px;
+		font-size: 20px;
+		text-align: center;
+		color: $white-color;
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	&.visible {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&:hover,
+	&:focus {
+		color: $white-color;
+		background-color: rgba(0,0,0,0.3);
+	}
+}

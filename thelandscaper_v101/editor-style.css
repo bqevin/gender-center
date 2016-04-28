@@ -1,0 +1,5 @@
+/* Theme Variables, only visible in style.scss file */
+#tinymce.wp-editor { font-family: "Roboto", sans-serif; font-size: 14px; }
+#tinymce.wp-editor h1, #tinymce.wp-editor h2, #tinymce.wp-editor h3, #tinymce.wp-editor h4, #tinymce.wp-editor h5, #tinymce.wp-editor h6 { font-family: "Roboto Slab", serif; }
+#tinymce.wp-editor h1 .custom-title, #tinymce.wp-editor h2 .custom-title, #tinymce.wp-editor h3 .custom-title, #tinymce.wp-editor h4 .custom-title, #tinymce.wp-editor h5 .custom-title, #tinymce.wp-editor h6 .custom-title { padding-bottom: 15px; margin-bottom: 30px; border-bottom: 1px dashed #dedede; }
+#tinymce.wp-editor blockquote { border-left: 3px solid #999999; padding-left: 20px; }

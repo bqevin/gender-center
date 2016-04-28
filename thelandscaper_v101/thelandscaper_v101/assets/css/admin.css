@@ -1,0 +1,31 @@
+
+/* Widget Social Links */
+.qt-meta-box {
+	padding: 1px 15px 15px 15px;
+	margin: 20px 0px;
+	background-color: #f9f9f9;
+	border: 1px solid #dfdfdf;
+}
+
+/* Widget Testimonials */
+.js-remove-testimonial {
+	text-decoration: none;
+}
+.js-remove-testimonial span {
+	margin-right: 5px;
+}
+.testimonial-widget-child {
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #dfdfdf;
+}
+
+textarea {
+	max-width: 100%;
+}
+
+/* TGMPA plugin notice */
+#setting-error-tgmpa {
+	float: none;
+}
